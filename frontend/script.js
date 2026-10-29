@@ -1,6 +1,6 @@
 // FraudShield AI — Shared frontend logic
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://creditcard-fraud-detection-2q9i.onrender.com/";
 const STORAGE_KEY = "fraudshield_transaction_history";
 
 // Get saved transaction history
