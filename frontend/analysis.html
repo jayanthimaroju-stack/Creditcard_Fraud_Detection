@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FraudShield AI | Transaction Analysis</title>
+  <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body><div class="app-container">
+  <aside class="sidebar"><a class="brand" href="index.html"><span class="brand-icon">✦</span><span><strong>FraudShield <em>AI</em></strong><small>INTELLIGENCE PLATFORM</small></span></a><p class="nav-heading">WORKSPACE</p>
+    <nav class="navigation"><a class="nav-link" href="index.html"><span>▦</span> Dashboard</a><a class="nav-link active" href="analysis.html"><span>⌕</span> Transaction Analysis</a><a class="nav-link" href="history.html"><span>◷</span> Transaction History</a><a class="nav-link" href="analytics.html"><span>▥</span> Model Analytics</a></nav>
+    <div class="sidebar-bottom"><div class="system-status"><span class="status-dot"></span><div><strong>AI Engine</strong><p>Ready for analysis</p></div></div><div class="profile"><span class="profile-avatar">AI</span><div><strong>Fraud Detection</strong><p>Machine Learning System</p></div></div></div>
+  </aside>
+  <main class="main-content"><header class="topbar"><div><p class="breadcrumb">WORKSPACE / PREDICTION ENGINE</p><h1>Transaction Analysis</h1></div><span class="live-indicator"><span class="status-dot"></span> System Online</span></header>
+    <section class="page-intro"><p class="eyebrow">AI-POWERED RISK ASSESSMENT</p><h2>Evaluate a transaction.</h2><p>Enter the 30 numerical features in the exact order expected by the trained model.</p></section>
+    <section class="dashboard-grid analysis-layout">
+      <article class="panel"><div class="panel-header"><div><p class="eyebrow">INPUT DATA</p><h2>Transaction Features</h2></div><span class="badge">30 values required</span></div>
+        <form id="prediction-form"><label for="transaction-features">Transaction Features</label><textarea id="transaction-features" name="features" rows="8" placeholder="Enter 30 comma-separated numeric values..." required></textarea><p class="input-help">Required order: Time, V1–V28, Amount. Do not include the Class column.</p><button type="submit" class="primary-button analyze-button"><span>✦</span> Analyze Transaction</button><p id="form-message" class="form-message" role="status" aria-live="polite"></p></form>
+      </article>
+      <article class="panel result-panel"><div class="panel-header"><div><p class="eyebrow">MODEL OUTPUT</p><h2>Risk Assessment</h2></div></div>
+        <div id="result-placeholder" class="result-placeholder"><div class="result-symbol">✦</div><h3>Awaiting Analysis</h3><p>Submit transaction features to see the model's prediction and estimated fraud probability.</p></div>
+        <div id="prediction-result" hidden><div id="result-badge" class="result-badge"><span id="result-symbol">✓</span><span id="result-label">LEGITIMATE</span></div><div class="risk-score"><div class="risk-score-heading"><span>Estimated Fraud Probability</span><strong id="fraud-probability">0.00%</strong></div><div class="progress-track"><div id="risk-progress" class="progress-fill"></div></div></div><p class="result-disclaimer">This result is a machine learning prediction, not a guarantee of transaction legitimacy.</p></div>
+      </article>
+    </section>
+    <footer class="footer"><p>FraudShield AI · Machine Learning Fraud Detection</p><p>Powered by Random Forest &amp; Flask</p></footer>
+  </main>
+</div><script src="script.js"></script></body></html>
